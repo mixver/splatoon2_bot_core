@@ -3,7 +3,7 @@ import random
 from PIL import Image,ImageFont,ImageDraw
 import os
 
-font = ImageFont.truetype(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\fonts\\HaiPaiQiangDiaoGunShiJian-2.otf', 36)
+font = ImageFont.truetype(os.path.abspath('..')+'/splatoon2_bot_core'+'/fonts/HaiPaiQiangDiaoGunShiJian-2.otf', 36)
 finalBackgroundImageWidth=384
 finalBackgroundImageHeight=704
 # 地图图片倍率
@@ -13,7 +13,7 @@ stageImageHeight=9*stageImageRate
 
 # 获取splatoon2全部数据
 def getSplatoon2Data():
-    with open(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\data\\splatoon2-data.json','r',encoding='UTF-8') as  splatoon2Data:
+    with open(os.path.abspath('..')+'/splatoon2_bot_core'+'/data/splatoon2-data.json','r',encoding='UTF-8') as  splatoon2Data:
         data=json.load(splatoon2Data)
         return data
 
@@ -41,7 +41,7 @@ def generateWeaponImage(weapon,sub,special,filename):
 
 # 补全图片路径
 def generateImagePath(path):
-    return os.path.abspath('..')+'\\splatoon2_bot_core'+"\\data"+path
+    return os.path.abspath('..')+'/splatoon2_bot_core'+"/data"+path
 
 # 合成图片
 def composeImage(imagesPath,imagesFormat,imagesWSize,imagesHSize,imagesRow,imagesColumn,imagesSavePath,imagesNames):

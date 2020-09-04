@@ -9,9 +9,9 @@ stageImageWidth=16*stageImageRate
 stageImageHeight=9*stageImageRate
 
 fontHeight=44
-print(os.path.abspath('..')+'\\splatoon2_bot_core')
-font = ImageFont.truetype(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\fonts\\Paintball_Beta_4a.otf', 24)
-fontHaiPai=ImageFont.truetype(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\fonts\\HaiPaiQiangDiaoGunShiJian-2.otf',24)
+print(os.path.abspath('..')+'/splatoon2_bot_core')
+font = ImageFont.truetype(os.path.abspath('..')+'/splatoon2_bot_core'+'/fonts/Paintball_Beta_4a.otf', 24)
+fontHaiPai=ImageFont.truetype(os.path.abspath('..')+'/splatoon2_bot_core'+'/fonts/HaiPaiQiangDiaoGunShiJian-2.otf',24)
 MINUTES_EPOCH = 60
 HOURS_EPOCH = 60 * MINUTES_EPOCH
 # 图片添加文字 image: 图片  text：要添加的文本 font：字体
@@ -88,7 +88,7 @@ def formatRemainingTime(start,end,now):
     return msg
 # 补全图片路径
 def generateImagePath(path):
-    return os.path.abspath('..')+'\\splatoon2_bot_core'+"\\data"+path
+    return os.path.abspath('..')+'/splatoon2_bot_core'+"/data"+path
 
 def dictGet(d: dict, key: str):
     return d.get(key, key)

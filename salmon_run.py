@@ -13,8 +13,8 @@ stageImageWidth=16*stageImageRate
 stageImageHeight=9*stageImageRate
 
 fontHeight=44
-font = ImageFont.truetype(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\fonts\\Paintball_Beta_4a.otf', 24)
-fontHaiPai=ImageFont.truetype(os.path.abspath('..')+'\\splatoon2_bot_core'+'\\fonts\\HaiPaiQiangDiaoGunShiJian-2.otf',24)
+font = ImageFont.truetype(os.path.abspath('..')+'/splatoon2_bot_core'+'/fonts/Paintball_Beta_4a.otf', 24)
+fontHaiPai=ImageFont.truetype(os.path.abspath('..')+'/splatoon2_bot_core'+'/fonts/HaiPaiQiangDiaoGunShiJian-2.otf',24)
 
 MINUTES_EPOCH = 60
 HOURS_EPOCH = 60 * MINUTES_EPOCH
